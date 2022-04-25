@@ -1,0 +1,118 @@
+/* Add a cover background picture for the featured part with a fixed height */
+.jumbotron {
+    background: url(https://freenaturestock.com/wp-content/uploads/freenaturestock-1936-1024x664.jpg);
+    background-size: 100% 100%;
+    height: 600px;
+}
+
+/* Set the size of the logo */
+
+.logo {
+    width: 125px;
+    height: 125px;
+    margin-left: 100px;
+}
+
+.featured {
+    color: white;
+    margin-left: 150px;
+}
+
+.featured h1 {
+    padding-top: 60px;
+}
+
+.featured .btn-default {
+    font-weight: bold;
+    color: white;
+    background-color: rgba(145, 82, 58, 0.5);
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 160px;
+    margin-right: 15px;
+}
+
+.featured .btn-default:hover {
+    background-color: rgb(145, 82, 58);
+}
+
+.trail {
+    text-align: center;
+    padding: 20px 0 40px 0;
+    color: black;
+}
+
+.trail img {
+    width: 200px;
+    height: 70px;
+    margin: 20px;
+}
+
+/* Style footer */
+
+.footer {
+    background-color: #eee;
+    font-size: 15px;
+}
+
+/* Add styling for devices between 480px and 768px */
+
+@media (min-width: 480px) and (max-width: 768px) {
+    .jumbotron {
+        height: 410px;
+        margin: 0;
+    }
+
+    .logo {
+        width: 50px;
+        height: 50px;
+        margin-left: 50px;
+    }
+
+    .featured h1 {
+        padding-top: 30px;
+    }
+
+    .featured p {
+        font-size: 17px;
+    }
+
+    .featured {
+        text-align: center;
+        margin-left: 0px;
+    }
+}
+
+/* Add styling for devices under 480px */
+
+@media (max-width: 480px) {
+    .jumbotron {
+        height: 410px;
+        margin: 0;
+    }
+
+    .logo {
+        width: 40px;
+        height: 40px;
+        margin-left: 0px;
+    }
+
+    .featured h1 {
+        padding-top: 10px;
+    }
+
+    .featured p, .featured a {
+        font-size: 10px;
+    }
+
+    .featured {
+        text-align: center;
+        margin-left: 0px;
+    }
+
+    .trail img {
+        width: 100px;
+        height: 35px;
+        margin: 10px;
+    }
+}
